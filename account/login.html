@@ -20,25 +20,33 @@
         window.location.replace("../posts/posts.html");
       }
     </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header></header>
 
     <main>
-      <h1>Login</h1>
-      <form id="login">
-        <div>
-          <label for="username">Username</label>
-          <input type="text" id="username" minlength="3" />
-        </div>
+      <div class="container">
+        <h1>Login</h1>
+        <form id="login">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" minlength="3" />
+          </div>
 
-        <div>
-          <label for="password">Password</label>
-          <input type="password" id="password" minlength="6" />
-        </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="6" />
+          </div>
 
-        <button id="loginButton" type="submit">Login</button>
-      </form>
+          <button id="loginButton" type="submit">Login</button>
+        </form>
+      </div>
     </main>
 
     <footer></footer>
