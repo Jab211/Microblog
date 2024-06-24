@@ -21,15 +21,55 @@
   </head>
   <body>
     <header>
-      <nav>
-        
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">QuikByte</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Sign Up</a>
+            </li>
+            
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </nav>
     </header>
 
     <main>
       <div class="container">
         <h1>Create your account</h1>
-        <form id="login">
+        <form id="signup">
           <div>
             <label for="username" >Name</label>
             <input type="text" id="username" minlength="3" />
@@ -39,15 +79,59 @@
             <label for="password">Password</label>
             <input type="password" id="password" minlength="6" />
           </div>
+          <button id="signupButton" type="submit">Create Account</button>
 
-          <a href="account/register.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create Account</a>
 
         </form>
       </div>
     </main>
-
-    <footer></footer>
-
+    <footer class="pb-4">
+      <div class="container">
+          <div class="pt-4">
+              <h4>Quick Links</h4>
+          </div>
+  
+          <div class="d-flex justify-content-between">
+              <div>
+                  <ul class="list-unstyled">
+                      <li><a href="home.html" class="text-dark">About Us</a></li>
+                      <li><a href="home.html" class="text-dark">Contact</a></li>
+                      <li><a href="home.html" class="text-dark">Contribute</a></li>
+                      <li><a href="home.html" class="text-dark">Privacy Policy</a></li>
+                  </ul>
+              </div>
+  
+              <div>
+                  <ul class="list-unstyled">
+                      <li><a href="home.html" class="text-dark">About</a></li>
+                      <li><a href="view-all.html" class="text-dark">View All</a></li>
+                      <li><a href="home.html" class="text-dark">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <div>
+                  <ul class="list-unstyled">
+                      <li><a href="home.html" class="text-dark">About Us</a></li>
+                      <li><a href="home.html" class="text-dark">Contact</a></li>
+                      <li><a href="home.html" class="text-dark">Contribute</a></li>
+                      <li><a href="home.html" class="text-dark">Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <hr>
+  
+          <div class="d-flex justify-content-between align-items-center">
+              <h6>Copyright @ 2024 All Rights Reserved by LogoIpsum To-dos</h6>
+  
+              <div>
+                  <!-- Additional content or links can be placed here -->
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script src="auth.js"></script>
+<script src="register.js"></script>
    
   </body>
 </html>
