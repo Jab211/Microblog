@@ -1,0 +1,88 @@
+/* General page styles */
+body {
+    background-color: #e6ecf0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #14171a;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px; /* Set base font size */
+  }
+  
+  header {
+    width: 100%;
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #ffffff; /* Ensure it's white or matches your theme */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 1rem; /* 16px */
+    padding: 1.25rem; /* 20px */
+    max-width: 25rem; /* 400px */
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1); /* 1px 3px */
+    margin: 5rem auto 1.25rem; /* 80px top, auto sides, 20px bottom */
+  }
+  
+  h1 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
+    margin-bottom: 1.25rem; /* 20px */
+    text-align: center;
+    color: #1da1f2;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.3125rem; /* 5px */
+    color: #657786;
+  }
+  
+  input,
+  button {
+    border-radius: 1.25rem; /* 20px */
+    border: 0.0625rem solid #e1e8ed; /* 1px */
+    padding: 0.625rem; /* 10px */
+    margin: 0.3125rem 0; /* 5px top and bottom, 0 left and right */
+    background-color: #f5f8fa;
+    font-size: 0.875rem; /* 14px */
+    color: #14171a;
+  }
+  
+  input:focus {
+    border-color: #1da1f2;
+    outline: none;
+    box-shadow: 0 0 0 0.125rem rgba(29, 161, 242, 0.25); /* 2px */
+  }
+  
+  button {
+    background-color: #1da1f2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem; /* 16px */
+    transition: background-color 0.3s;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+  }
+  
+  button:hover {
+    background-color: #0d95e8;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  

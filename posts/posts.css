@@ -1,1 +1,90 @@
-/* Posts Page CSS */
+/* General page styles */
+body {
+    background-color: #e6ecf0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #14171a;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  /* Form styling */
+  #createPostForm .form-label {
+    font-weight: bold;
+    color: #1da1f2;
+  }
+  
+  #postText {
+    border-radius: 20px;
+    border: 1px solid #e1e8ed;
+    padding: 10px;
+    background-color: #f5f8fa;
+  }
+  
+  #createPostButton {
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #createPostButton:hover {
+    background-color: #0d95e8;
+  }
+  
+  /* Post styling */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h6 {
+    font-weight: bold;
+    color: #14171a;
+  }
+  
+  .card p {
+    color: #14171a;
+  }
+  
+  .card footer {
+    color: #657786;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  /* Post actions styling */
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-top: 1px solid #e1e8ed;
+    padding-top: 10px;
+  }
+  
+  .post-actions button {
+    background: none;
+    border: none;
+    color: #1da1f2;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-actions button:hover {
+    text-decoration: underline;
+  }
+  
+  .post-actions button svg {
+    margin-right: 5px;
+  }
+  
