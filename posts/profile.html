@@ -1,4 +1,3 @@
-<!-- POSTS page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,35 +49,29 @@
               >Home <span class="sr-only"></span></a
             >
           </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="posts.html">Posts</a>
+          </li>
           <li class="nav-item">
             <button class="nav-link button btn btn-link" id="logoutButton">Logout</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile.html">Profile</a>
-          </li>
-          
       </div>
     </nav>
   </header>
+  
 
-    <main>
-      <div class="container">
-        <h1>Posts</h1>
-        <form id="createPostForm" class="mb-3">
-          <div class="mb-3">
-            <label for="postText" class="form-label" >Create a new post:</label>
-            <textarea class="form-control" id="postText" rows="3" required ></textarea>
-          </div>
-          <button type="button" class="btn btn-primary" id="createPostButton">Post</button>
-        </form>
+  <main>
+    <div class="container">
+        <div id="profileContainer">
+            
+        </div>
+    </div>
+  </main>
 
-        <div id="postsContainer" class="d-flex flex-column gap-3"></div>
-      </div>
-    </main>
+  <footer></footer>
 
-    <footer></footer>
-
-    <!-- Page-specific code -->
-    <script src="posts.js"></script>
-  </body>
+  <!-- Page-specific code -->
+  <script src="profile.js"></script>
+</body>
 </html>
