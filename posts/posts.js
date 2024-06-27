@@ -4,6 +4,7 @@
 const postsContainer = document.querySelector("#postsContainer");
 const createPostButton = document.querySelector("#createPostButton");
 const postText = document.querySelector("#postText");
+const logoutButton = document.querySelector("#logoutButton");
 const loginData = getLoginData();
 
 function loadPosts() {
@@ -27,7 +28,7 @@ function loadPosts() {
   
         postHeader.innerText = post.username;
         postDiv.innerText = post.text;
-        postCreated.innerText = post.createdAt;
+        postCreated.innerText = new Date(post.createdAt).toLocaleString();
   
         postsContainer.appendChild(postHeader);
         postsContainer.appendChild(postDiv);
@@ -36,14 +37,6 @@ function loadPosts() {
     });
   
 }
-
-//     console.log(posts));
-
-// })
-
-// .then((response) => response.json())
-// .then((userPosts) => {
-
 // // roughly the code needed to create post
 
 function createPost() {
@@ -57,10 +50,13 @@ function createPost() {
       text: postText.value,
     }),
   }).then((response) => {
-    loadPosts();
+    // loadPosts();
+    location.reload();
     return response.json();
   });
 }
 createPostButton.onclick = createPost;
+logoutButton.onclick = logout;
 
 loadPosts();
+
