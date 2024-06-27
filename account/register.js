@@ -1,28 +1,37 @@
 "use strict";
 
-const signupForm = document.querySelector("#signup");
+const signUpForm = document.querySelector("#signUpForm");
 
+const signupButton = document.querySelector("#signupButton");
+const usernameInput = document.querySelector("#usernameInput");
+const passwordInput = document.querySelector("#passwordInput");
 
-// for register 
-function login(loginData) {
-    // POST /auth/login
-    const options = {
-      method: "POST",
-      headers: {
-        // This header specifies the type of content we're sending.
-        // This is required for endpoints expecting us to send
-        // JSON data.
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(loginData),
-    };
-  
-    return fetch(apiBaseURL + "/auth/login", options)
-      .then((response) => response.json())
-      .then((loginData) => {
-        window.localStorage.setItem("login-data", JSON.stringify(loginData));
-        window.location.assign("../posts/posts.html"); // redirect
-  
-        return loginData;
-      });
-  }
+function signUp(event) {
+  event.preventDefault();
+
+  const signUpData = {
+    username: signUpForm.usernameInput.value,
+    fullName: "jon Doe",
+    password: signUpForm.passwordInput.value,
+  };
+  createUser(signUpData);
+}
+
+function createUser(signUpData) {
+  fetch("http://microbloglite.us-east-2.elasticbeanstalk.com/api/users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(signUpData),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((user) => {
+      console.log(user);
+      window.location.assign("login.html"); // redirec
+    });
+}
+
+signupButton.onclick = signUp;
