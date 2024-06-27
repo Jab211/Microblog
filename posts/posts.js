@@ -51,7 +51,7 @@ function createPost() {
     }),
   }).then((response) => {
     // loadPosts();
-    location.reload();
+    location.reload()
     return response.json();
   });
 }
