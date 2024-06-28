@@ -3,17 +3,11 @@ body {
     background-color: #e6ecf0;
     font-family: "Helvetica Neue", Arial, sans-serif;
     color: #14171a;
-    font-size: 16px; /* Set base font size */
+    font-size: 1rem; /* Set base font size */
 }
 
 .container {
     margin-top: 1.25rem; /* 20px */
-    max-width: 25rem; /* 400px */
-    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1); /* 1px 3px */
-    padding: 1.25rem; /* 20px */
-    border: 0.0625rem solid #e1e8ed; /* 1px */
-    border-radius: 1rem; /* 16px */
-    background-color: #ffffff;
 }
 
 h1 {
